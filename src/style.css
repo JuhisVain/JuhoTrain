@@ -1,0 +1,76 @@
+.trainleave {
+	clear: left;
+	height: auto;
+	border-style: solid;
+	border-width: 1px;
+	margin: 2px;
+	display: table;
+}
+
+.traindata {
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px;
+	margin: 2px;
+	float: left;
+}
+
+#message {
+	padding: 10px;
+	margin: 20px;
+	border-style: solid;
+}
+
+#timetable {
+	display:table;
+}
+
+#dataheader {
+	font-weight: bold;
+	background-color: black;
+	color: white;
+}
+
+.data {
+	text-align: center;
+	background-color: #f2f2f2;
+	clear:left;
+	padding: 3px;
+	color: #000000;
+}
+
+.lineid {
+	float:left;
+	width: 70px;
+}
+
+.track {
+	float:left;
+	width: 65px;
+}
+
+.time {
+	float:left;
+	width: 100px;
+}
+
+.destination {
+	float:left;
+	width: 100px; 
+}
+
+.category {
+	float:left;
+	width: 120px;
+}
+
+.operator {
+	float:left;
+	width: 85px;
+}
+
+.trainid {
+	float:left;
+	width:80px;
+}

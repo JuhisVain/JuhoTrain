@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<body>
+		<div id="test"></div>
+		<div id="input">
+			
+			<input type="text" id="stationInput">
+			<button onclick="getStationCode()">Get timetable</button>
+
+			<select id="select" onchange="selection(this.value)"></select>
+
+		</div>
+
+		<div id="timetable">
+
+			<div class="data" id="dataheader">
+				<div class="lineid">Line ID</div>
+				<div class="track">Track</div>
+				<div class="time">Departure</div>
+				<div class="destination">Destination</div>
+				<div class="category">Category</div>
+				<div class="operator">Operator</div>
+				<div class="trainid">Number</div>
+				<div style="clear:both;"></div>
+			</div>
+
+		</div>
+
+		<div id="message">
+			<p>The dropdown will update the page only if there are actually tains leaving the station, otherwise it will seem to do nothing.</p>
+			<p>The search input is not case sensitive, but it needs the full name of the station to work, such as "helsinki asema".</p>
+			<p>You will be shown train departures up to 60 minutes in to the future for the searched station.</p>
+			<p>Some stations have shortcodes with Ö or Ä characters, which will not work.</p></div>
+
+	</body>
+	<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="juhotrain.js"></script>
+</html>
+
